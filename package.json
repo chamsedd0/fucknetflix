@@ -21,7 +21,7 @@
     "analyze": "npx source-map-explorer 'build/assets/*.js' --html result.html --no-border-checks"
   },
   "dependencies": {
-    "@googleapis/youtube": "^8.0.2",
+    "@googleapis/youtube": "^40.0.0",
     "@mediabunny/ac3": "^1.61.3",
     "axios": "^1.13.2",
     "body-parser": "^1.20.4",

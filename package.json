@@ -30,7 +30,7 @@
     "discord.js": "^14.25.1",
     "express": "^5.2.1",
     "firebase-admin": "^11.11.1",
-    "ioredis": "^5.8.2",
+    "ioredis": "^6.0.0",
     "mediabunny": "^1.61.3",
     "node-ssh": "^13.2.1",
     "pg": "^8.16.3",

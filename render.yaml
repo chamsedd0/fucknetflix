@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: fucknetflix
+    runtime: docker
+    plan: free
+    healthCheckPath: /ping

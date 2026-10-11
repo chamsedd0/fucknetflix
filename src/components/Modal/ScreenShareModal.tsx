@@ -32,8 +32,8 @@ export const ScreenShareModal = ({
         <Table.Thead>
           <Table.Tr>
             <Table.Th />
-            <Table.Th>WatchParty Free</Table.Th>
-            <Table.Th>WatchParty Plus</Table.Th>
+            <Table.Th>FuckNetflix Free</Table.Th>
+            <Table.Th>FuckNetflix Plus</Table.Th>
           </Table.Tr>
         </Table.Thead>
 

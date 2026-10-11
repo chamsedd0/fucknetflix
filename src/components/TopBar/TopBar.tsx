@@ -314,24 +314,24 @@ export const TopBar = (props: {
                   style={{
                     textTransform: "uppercase",
                     fontWeight: 700,
-                    color: "#2185d0",
+                    color: "#ffffff",
                     fontSize: "30px",
                     lineHeight: "30px",
                   }}
                 >
-                  Watch
+                  Fuck
                 </div>
                 <div
                   style={{
                     textTransform: "uppercase",
                     fontWeight: 700,
-                    color: "#21ba45",
+                    color: "#ff4d8d",
                     fontSize: "30px",
                     lineHeight: "30px",
                     marginLeft: "auto",
                   }}
                 >
-                  Party
+                  Netflix
                 </div>
               </div>
             </a>

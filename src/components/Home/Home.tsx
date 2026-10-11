@@ -23,7 +23,7 @@ export const Home = () => {
     <div>
       <div className={styles.container}>
         <Hero
-          heroText={"Watch videos together with friends anywhere."}
+          heroText={"Watch together, no matter the distance."}
           subText={"No registration or download required."}
           action={
             <div style={{ marginTop: "8px", width: "300px" }}>
@@ -199,7 +199,7 @@ export const DiscordBot = () => {
       <Hero
         color="green"
         heroText={
-          "Add the WatchParty Discord bot to your server to easily generate WatchParty links."
+          "Add the FuckNetflix Discord bot to your server to easily generate FuckNetflix links."
         }
         subText={"/watch to generate a new empty room"}
         subText2={"/watch video <URL_HERE> to create a room with a video"}

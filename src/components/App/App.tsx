@@ -1180,8 +1180,12 @@ export class App extends React.Component<AppProps, AppState> {
   startScreenShare = async (useMediaSoup: boolean) => {
     if (navigator.mediaDevices.getDisplayMedia) {
       const stream = await navigator.mediaDevices.getDisplayMedia({
-        //@ts-expect-error
-        video: { height: 720, logicalSurface: true },
+        video: {
+          height: { ideal: 1080 },
+          frameRate: { ideal: 30 },
+          //@ts-expect-error
+          logicalSurface: true,
+        },
         audio: {
           autoGainControl: false,
           channelCount: 2,
@@ -1638,7 +1642,17 @@ export class App extends React.Component<AppProps, AppState> {
           this.publisherConns[id] = pc;
           this.localStreamToPublish?.getTracks().forEach((track) => {
             if (this.localStreamToPublish != null) {
-              pc.addTrack(track, this.localStreamToPublish);
+              const sender = pc.addTrack(track, this.localStreamToPublish);
+              if (track.kind === "video") {
+                // Raise the default WebRTC bitrate cap so 1080p stays sharp
+                const params = sender.getParameters();
+                params.encodings = params.encodings?.length
+                  ? params.encodings
+                  : [{}];
+                params.encodings[0].maxBitrate = 8_000_000;
+                params.degradationPreference = "maintain-resolution";
+                sender.setParameters(params).catch(console.warn);
+              }
             }
           });
           pc.onicecandidate = (event) => {

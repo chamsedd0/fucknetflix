@@ -105,7 +105,7 @@ Is there a limit to how many people can be in a room?
 ----
 Currently there isn't a hard limit, although the service hasn't been tested with more than 15 people or so. Screensharing and filesharing rely on one person uploading to everyone else, so it may not work well with large room sizes.
 
-I own a website and I'd like to have a link that generates a WatchParty room with a specific video already set. How do I do this?
+I own a website and I'd like to have a link that generates a FuckNetflix room with a specific video already set. How do I do this?
 ----
 You can link to https://www.watchparty.me/create?video=URL_HERE to do this!
 
